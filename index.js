@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://iochat.vercel.app/",
+    origin: "https://iochat.vercel.app",
     methods: ["GET", "POST"],
   },
 });
