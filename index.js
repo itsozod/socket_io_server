@@ -9,11 +9,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: [
-      "https://iochat.vercel.app",
-      "http://localhost:5173",
-      "http://localhost:5174",
-    ],
+    origin: "https://iochat.vercel.app",
     methods: ["GET", "POST"],
   },
 });
